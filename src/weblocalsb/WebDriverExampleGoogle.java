@@ -16,7 +16,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 public class WebDriverExampleGoogle {
-	public static void main(String[] args) {
+	        @Test
+		public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://www.google.com");
