@@ -26,12 +26,13 @@ public class WebDriverExampleGoogle {
 	//public static void main(String[] args) {
 	public void exemplPesquisarGoogle(){
 	
-	//	WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.gecko.driver", "C:\\Gecko\\geckodriver.exe");
-			WebDriver driver = new FirefoxDriver();
+	    WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+
+		//System.setProperty("webdriver.gecko.driver", "C:\\Gecko\\geckodriver.exe");
+			//WebDriver driver = new FirefoxDriver();
 		
 		
-		//ChromeDriver driver = new ChromeDriver();
 		driver.get("http://www.google.com");
 	
 		WebElement element1 = driver.findElement(By.name("q"));
